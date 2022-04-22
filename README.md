@@ -25,14 +25,25 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read.
 
 1. Explain the differences between `.map`, `.reduce` and `.filter` and describe a use case for each. 
+    .map - runs a callback function over each item in an array and returns an array of equivalent length.
+    .reduce - runs a callback function over each item in an array, creating a running total and returning a single value.
+    .filter - runs a callback function over each item in an array and returns an array consisting of only the items for which the callback function returned true.
 
 2. Explain the difference between a callback and a higher order function.
+    Callback function - a function that is passed into another function as an argument to be used in that function.
+    HOF - a function that receives another function as one of its arguments.
 
 3. Explain what a closure is.
+    A closure consists of a function AND its surrounding environment in cases when the function calls upon variables and other functions which it does not contain.
 
 4. Describe the four principles of the 'this' keyword.
+    Global - the default setting of "this" is to refer to the global context or the window.
+    Implicit - when a method is called, "this" refers to whatever is left of the dot, meaning the object of which the method being called is a property.
+    Explicit - when "this" is explicitly defined by typed lines of code using methods like call() or apply().
+    New - when "this" refers to the object which is being newly created using a constructor function.
 
 5. Why do we need super() in an extended class?
+    Super() passes all of the properties received into the child function back through the parent function so that the newly created object inherits all the properties of its parent function.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
